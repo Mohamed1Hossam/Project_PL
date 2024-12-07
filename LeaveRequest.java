@@ -3,16 +3,16 @@
 public class LeaveRequest extends Employee {
    private int LRid;
    private String LRtype,LRstartDate,LRendDate,LRstatus;
-   private static final String LRfile="LR.txt"; //same as in super but for L requests..don't know if it's necceasry or not
+   private static final String LRfile="../files/LR.txt"; //same as in super but for L requests..don't know if it's necceasry or not
    
    public LeaveRequest(){
        
    }
    public LeaveRequest(int employeeId,String name,String role,int LRid,String LRtype,String LRstartDate,String LRendDate){
       ///make sure the names match the ones in the employee classs
-       super.employeeId=employeeId;
-       super.name=name;
-       super.role=role;
+       setEmployeeId(employeeId);
+       setName(name);
+       setRole(role);
        this.LRendDate=LRendDate;
        this.LRid=LRid;
        this.LRtype=LRtype;
@@ -54,18 +54,15 @@ public class LeaveRequest extends Employee {
    }   
 
    public void SumbitLR(){
-        if(LRid!=-1){
-       saveLR();}
-        else{super.fail();
-        
-        }
+       saveLR();
+     
    }
    
    @Override
    public void create(int employeeId,String name,String role,int LRid,String LRtype,String LRstartDate,String LRendDate){
-         super.employeeId=employeeId;
-       super.name=name;
-       super.role=role;
+         setEmployeeId(employeeId);
+       setName(name);
+       setRole(role);
        this.LRendDate=LRendDate;
        this.LRid=LRid;
        this.LRtype=LRtype;
@@ -74,10 +71,52 @@ public class LeaveRequest extends Employee {
            }
    
       @Override
-      public void update(int employeeId,String name,String role,int LRid,String LRtype,String LRstartDate,String LRendDate){
-       super.employeeId=employeeId;
-       super.name=name;
-       super.role=role;
+      public void update(int employeeId,String name,String role,int LRid,String LRtype,String LRstartDate,String LRendDate,String LRstatus){
+
+    File inputFile = new File(LRfile);
+    File tempFile = new File("temp_users.txt");
+
+    boolean updated = false;
+
+    try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+         BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile))) {
+
+        String currentLine;
+
+        while ((currentLine = reader.readLine()) != null) {
+            String[] data = currentLine.split("---");
+            if (data[0].trim().equals("Employee ID ="+getEmployeeId()+" --- Name = "+getName()+" --- Role = "+getRole()+" --- LRid = "+LRid)) {
+                writer.write("Employee ID ="+getEmployeeId()+" --- Name = "+getName()+" --- Role = "+getRole()+" --- LRid = "+LRid+" --- LRtype = "+LRtype+" --- LRstartDate = "+LRstartDate+" --- LRendDate = "+LRendDate+" --- LRstatus = "+LRstatus);
+                updated = true;
+            } else {
+                writer.write(currentLine);
+            }
+            writer.newLine();
+        }
+    } catch (IOException e) {
+        System.out.println("Error while updating user: " + e.getMessage());
+        super.writeLog("Error while updating user: " + e.getMessage());
+        return;
+    }
+
+    if (updated) {
+        if (inputFile.delete() && tempFile.renameTo(inputFile)) {
+            System.out.println("User updated successfully.");
+            super.writeLog("User updated successfully.");
+        } else {
+            System.out.println("Error updating user file.");
+            super.writeLog("Error updating user file.");
+        }
+    } else {
+        System.out.println("User ID not found.");
+        super.writeLog("User ID not found.");
+        tempFile.delete();
+    }
+
+
+       setEmployeeId(employeeId);
+       setName(name);
+       setRole(role);
        this.LRendDate=LRendDate;
        this.LRid=LRid;
        this.LRtype=LRtype;
@@ -86,41 +125,99 @@ public class LeaveRequest extends Employee {
            }
       
    @Override      
-   public  void delete(){
+   public  void delete(int LRid){
        this.LRid=-1;
+       File inputFile = new File(LRfile);
+    File tempFile = new File("temp_users.txt");
+
+    boolean deleted = false;
+
+    try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+         BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile))) {
+
+        String currentLine;
+
+        while ((currentLine = reader.readLine()) != null) {
+            String[] data = currentLine.split("---");
+            if (!data[0].trim().equals("Employee ID ="+getEmployeeId()+" --- Name = "+getName()+" --- Role = "+getRole()+" --- LRid = "+LRid)) {
+                writer.write(currentLine);
+                writer.newLine();
+            } else {
+                deleted = true;
+            }
+        }
+    } catch (IOException e) {
+        System.out.println("Error while deleting user: " + e.getMessage());
+        super.writeLog("Error while deleting user: " + e.getMessage());
+        return;
+    }
+
+    if (deleted) {
+        if (inputFile.delete() && tempFile.renameTo(inputFile)) {
+            System.out.println("User deleted successfully.");
+            super.writeLog("User deleted successfully.");
+        } else {
+            System.out.println("Error deleting user file.");
+            super.writeLog("Error deleting user file.");
+        }
+    } else {
+        System.out.println("User ID not found.");
+        super.writeLog("User ID not found.");
+        tempFile.delete();
+    }
+}
    }
    
-   private void saveLR(){
-       try{
-           File x=new File(LRfile);
-           PrintWriter y=new PrintWriter(new FileOutputStream(x,x.exists()));
-           String p=getEmployeeId() + "---" + getName() + "---" + getRole() + "---" + LRid + "---" + LRtype + "---" + LRstartDate + "---" + LRendDate + "---" + LRstatus;
-           writeLog(p);
-           y.println(p);
-         y.close();
-       }
-       catch(IOException ex){
-                      System.out.println("Error in the saveLR func in LeaveRequest Class");
-       }
-       
-       
-   }
+ 
+
+
+
+   public void saveUser() {
+                   String p="Employee ID ="+getEmployeeId()+" --- Name = "+getName()+" --- Role = "+getRole()+" --- LRid = "+LRid+" --- LRtype = "+LRtype+" --- LRstartDate = "+LRstartDate+" --- LRendDate = "+LRendDate+" --- LRstatus = "+LRstatus;
+
+        super.writeLog(p + " was saved to " + LRfile);
+        try {
+            File file = new File(LRfile);
+            boolean userExists = false;
+
+            try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+                String currentLine;
+                while ((currentLine = reader.readLine()) != null) {
+                    if (currentLine.startsWith("Employee ID ="+getEmployeeId()+" --- Name = "+getName()+" --- Role = "+getRole()+" --- LRid = "+LRid)) {
+                        userExists = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!userExists) {
+                try (PrintWriter writer = new PrintWriter(new FileOutputStream(file, true))) {
+                    writer.println(p);
+                    System.out.println("User saved successfully.");
+                    super.writeLog("User saved successfully.");
+                }
+            } else {
+                System.out.println(p+ " already exists.");
+                super.writeLog(p + " already exists.");
+            }
+        } catch (IOException ex) {
+            System.out.println("Error in the saveUser function: " + ex.getMessage());
+            super.writeLog("Error in the saveUser function: " + ex.getMessage());
+        }
+    
+}
+
+
    public void approveLR(){
-              if(LRid!=-1){
 
        this.LRstatus="Approved";
        saveLR();
-       }else{
-           super.fail();
-       }
+       
    }
    public void rejectLR(){
-       if(LRid!=-1){
        this.LRstatus="Rejected";
        saveLR();
-   }else{
-           super.fail();
-       }
+
    
    
    }
