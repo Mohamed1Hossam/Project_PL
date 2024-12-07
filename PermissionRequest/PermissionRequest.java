@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class PermissionRequest {
+public class PermissionRequest extends Employee {
 
     private String permissionRequestId;
     private String employeeId;
