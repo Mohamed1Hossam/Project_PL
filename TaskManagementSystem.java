@@ -16,7 +16,6 @@ public abstract class TaskManagementSystem {
    public TaskManagementSystem(int id,String usertype){
        this.id=id;
        this.userType=userType;
-       saveUser();
    }
    
    public int getId(){
@@ -32,11 +31,22 @@ public abstract class TaskManagementSystem {
        this.userType=userType;
    }
    
-   public abstract void add();//it's create in the msg hossam send
+   public void create(int id,String usertype){
+         this.id=id;
+         this.userType=userType;
+           }
+   
+   public void update(int id,String usertype){
+         this.id=id;
+         this.userType=userType;
+           }
    public abstract void read();
-   public abstract void delete();
+   public  void delete(){
+       this.id=-1;
+   }
    public abstract void search();
    public abstract void getList();
+   
    public void getDetails(){
        System.out.println("ID: "+id);
        System.out.println("User Type: "+userType);
@@ -44,7 +54,8 @@ public abstract class TaskManagementSystem {
    }
 
 
-   private void saveUser(){//save in the file
+   public void saveUser(){//save in the file
+       if(id!=-1){
        try{
          File x=new File(usersFile);
          PrintWriter y=new PrintWriter(new FileOutputStream(x,x.exists()));
@@ -53,7 +64,9 @@ public abstract class TaskManagementSystem {
        }
        catch(IOException ex){
            System.out.println("Error in the saveUser func in super");
-       }
+       }}else{
+             fail();
+         }
    }
    public static ArrayList<String> getAllUsers(){//print users in the file
        ArrayList<String> a= new ArrayList<>();
@@ -74,7 +87,8 @@ public abstract class TaskManagementSystem {
    }
    
    protected void writeLog(String log){ //used to write in the log file
-        try{
+         if(id!=-1){
+       try{
            File x=new File(logFile);
            PrintWriter y=new PrintWriter(new FileOutputStream(x,x.exists()));
          y.println(log);
@@ -83,9 +97,12 @@ public abstract class TaskManagementSystem {
        catch(IOException ex){
                       System.out.println("Error in the writeLog func in super");
        }
-       
+         }
+         else{
+             fail();
+         }
    }
-   public void readLog(){//used to read the log file
+   public static void readLog(){//used to read the log file
        
        try{
            File x=new File(usersFile);
@@ -102,5 +119,8 @@ public abstract class TaskManagementSystem {
    }
     
     
+   public void fail(){
+       System.out.println("Please Enter Info");
+   }
     
 }
