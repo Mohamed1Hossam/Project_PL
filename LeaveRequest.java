@@ -54,7 +54,40 @@ public class LeaveRequest extends Employee {
    }   
 
    public void SumbitLR(){
-       saveLR();
+        if(LRid!=-1){
+       saveLR();}
+        else{super.fail();
+        
+        }
+   }
+   
+   @Override
+   public void create(int employeeId,String name,String role,int LRid,String LRtype,String LRstartDate,String LRendDate){
+         super.employeeId=employeeId;
+       super.name=name;
+       super.role=role;
+       this.LRendDate=LRendDate;
+       this.LRid=LRid;
+       this.LRtype=LRtype;
+       this.LRstartDate=LRstartDate;
+       this.LRstatus="Pending";
+           }
+   
+      @Override
+      public void update(int employeeId,String name,String role,int LRid,String LRtype,String LRstartDate,String LRendDate){
+       super.employeeId=employeeId;
+       super.name=name;
+       super.role=role;
+       this.LRendDate=LRendDate;
+       this.LRid=LRid;
+       this.LRtype=LRtype;
+       this.LRstartDate=LRstartDate;
+       this.LRstatus="Pending";
+           }
+      
+   @Override      
+   public  void delete(){
+       this.LRid=-1;
    }
    
    private void saveLR(){
@@ -73,12 +106,23 @@ public class LeaveRequest extends Employee {
        
    }
    public void approveLR(){
+              if(LRid!=-1){
+
        this.LRstatus="Approved";
        saveLR();
+       }else{
+           super.fail();
+       }
    }
    public void rejectLR(){
+       if(LRid!=-1){
        this.LRstatus="Rejected";
        saveLR();
+   }else{
+           super.fail();
+       }
+   
+   
    }
    @Override
    public void getDetails(){
