@@ -1,15 +1,14 @@
 import java.io.*;
 import java.util.*;
 
-public class ProjectManagement {
+public class ProjectManagement extends Employee {
 
     private String projectId;
     private String clientName;
     private Date startDate;
     private Date endDate;
 
-    private static final String FILE_NAME = "../ProjectManagment/projects.txt";
-    private static final String LOG_FILE = "../files/Log.txt";
+    private static final String FILE_NAME = "../files/projects.txt";
 
     public ProjectManagement(String projectId, String clientName, Date startDate, Date endDate) {
         this.projectId = projectId;
@@ -25,8 +24,8 @@ public class ProjectManagement {
     }
 
     public void setProjectId(String projectId) {
-        writeLog("Updated Project ID to: " + projectId);
         this.projectId = projectId;
+        writeLog("Updated Project ID to: " + projectId);
     }
 
     public String getClientName() {
@@ -35,8 +34,8 @@ public class ProjectManagement {
     }
 
     public void setClientName(String clientName) {
-        writeLog("Updated Client Name to: " + clientName);
         this.clientName = clientName;
+        writeLog("Updated Client Name to: " + clientName);
     }
 
     public Date getStartDate() {
@@ -45,8 +44,8 @@ public class ProjectManagement {
     }
 
     public void setStartDate(Date startDate) {
-        writeLog("Updated Start Date for Project: " + projectId);
         this.startDate = startDate;
+        writeLog("Updated Start Date for Project: " + projectId);
     }
 
     public Date getEndDate() {
@@ -55,8 +54,8 @@ public class ProjectManagement {
     }
 
     public void setEndDate(Date endDate) {
-        writeLog("Updated End Date for Project: " + projectId);
         this.endDate = endDate;
+        writeLog("Updated End Date for Project: " + projectId);
     }
 
     public void addProject() {
@@ -73,7 +72,7 @@ public class ProjectManagement {
 
     public static void updateProject(String projectId, ProjectManagement updatedProject) {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("../ProjectManagment/temp_projects.txt");
+        File tempFile = new File("../files/temp_projects.txt");
         boolean updated = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -113,7 +112,7 @@ public class ProjectManagement {
 
     public static void deleteProject(String projectId) {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("../ProjectManagment/temp_projects.txt");
+        File tempFile = new File("../files/temp_projects.txt");
         boolean deleted = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -181,6 +180,7 @@ public class ProjectManagement {
             while ((currentLine = reader.readLine()) != null) {
                 projects.add(currentLine);
             }
+            writeLog("Accessed all projects.");
         } catch (IOException e) {
             System.out.println("Error reading all projects: " + e.getMessage());
             writeLog("Error reading all projects: " + e.getMessage());
@@ -193,11 +193,6 @@ public class ProjectManagement {
     }
 
     private static void writeLog(String log) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE, true))) {
-            writer.write(new Date() + " - " + log);
-            writer.newLine();
-        } catch (IOException e) {
-            System.out.println("Error writing to log file: " + e.getMessage());
-        }
+        System.out.println("LOG: " + log);
     }
 }

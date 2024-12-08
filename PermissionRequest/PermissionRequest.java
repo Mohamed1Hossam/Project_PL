@@ -9,8 +9,7 @@ public class PermissionRequest extends Employee {
     private String date;
     private String status;
 
-    private static final String FILE_NAME = "../PermissionRequest/PermissionRequest.txt";
-    private static final String LOG_FILE = "../files/Log.txt";
+    private static final String FILE_NAME = "../files/PermissionRequest.txt";
 
     public PermissionRequest(String permissionRequestId, String employeeId, String requestType, String date, String status) {
         this.permissionRequestId = permissionRequestId;
@@ -22,7 +21,8 @@ public class PermissionRequest extends Employee {
     }
 
     public String getPermissionRequestId() {
-        writeLog("Accessed permissionRequestId: " + permissionRequestId);
+        String logMessage = "Accessed permissionRequestId: " + permissionRequestId;
+        writeLog(logMessage);
         return permissionRequestId;
     }
 
@@ -32,7 +32,8 @@ public class PermissionRequest extends Employee {
     }
 
     public String getEmployeeId() {
-        writeLog("Accessed employeeId: " + employeeId);
+        String logMessage = "Accessed employeeId: " + employeeId;
+        writeLog(logMessage);
         return employeeId;
     }
 
@@ -42,7 +43,8 @@ public class PermissionRequest extends Employee {
     }
 
     public String getRequestType() {
-        writeLog("Accessed requestType: " + requestType);
+        String logMessage = "Accessed requestType: " + requestType;
+        writeLog(logMessage);
         return requestType;
     }
 
@@ -52,7 +54,8 @@ public class PermissionRequest extends Employee {
     }
 
     public String getDate() {
-        writeLog("Accessed date: " + date);
+        String logMessage = "Accessed date: " + date;
+        writeLog(logMessage);
         return date;
     }
 
@@ -62,7 +65,8 @@ public class PermissionRequest extends Employee {
     }
 
     public String getStatus() {
-        writeLog("Accessed status: " + status);
+        String logMessage = "Accessed status: " + status;
+        writeLog(logMessage);
         return status;
     }
 
@@ -76,21 +80,20 @@ public class PermissionRequest extends Employee {
             writer.write(permissionRequestId + "," + employeeId + "," + requestType + "," + date + "," + status);
             writer.newLine();
             System.out.println("Permission request submitted successfully.");
-            writeLog("Permission request submitted: " + permissionRequestId);
         } catch (IOException e) {
             System.out.println("Error submitting permission request: " + e.getMessage());
-            writeLog("Error submitting permission request: " + e.getMessage());
         }
+        writeLog("Submitted permission request: " + permissionRequestId);
     }
 
     public static void approvePermissionRequest(String permissionRequestId) {
         updateStatus(permissionRequestId, "Approved");
-        writeLog("Permission request approved: " + permissionRequestId);
+        writeLog("Approved permission request: " + permissionRequestId);
     }
 
     public static void rejectPermissionRequest(String permissionRequestId) {
         updateStatus(permissionRequestId, "Rejected");
-        writeLog("Permission request rejected: " + permissionRequestId);
+        writeLog("Rejected permission request: " + permissionRequestId);
     }
 
     public static List<PermissionRequest> readFromFile() {
@@ -103,11 +106,10 @@ public class PermissionRequest extends Employee {
                     requests.add(new PermissionRequest(parts[0], parts[1], parts[2], parts[3], parts[4]));
                 }
             }
-            writeLog("Read all permission requests from file");
         } catch (IOException e) {
             System.out.println("Error reading permission requests: " + e.getMessage());
-            writeLog("Error reading permission requests: " + e.getMessage());
         }
+        writeLog("Read all permission requests from file");
         return requests;
     }
 
@@ -123,19 +125,13 @@ public class PermissionRequest extends Employee {
                 writer.newLine();
             }
             System.out.println("Permission request updated successfully.");
-            writeLog("Permission request updated: " + permissionRequestId);
         } catch (IOException e) {
             System.out.println("Error updating permission request: " + e.getMessage());
-            writeLog("Error updating permission request: " + e.getMessage());
         }
+        writeLog("Updated status for permission request: " + permissionRequestId);
     }
 
-    private static void writeLog(String log) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(LOG_FILE, true))) {
-            writer.write(new Date() + " - " + log);
-            writer.newLine();
-        } catch (IOException e) {
-            System.out.println("Error writing to log file: " + e.getMessage());
-        }
+    private static void writeLog(String message) {
+        System.out.println("Log: " + message);
     }
 }
