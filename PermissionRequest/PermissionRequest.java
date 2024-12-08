@@ -131,7 +131,4 @@ public class PermissionRequest extends Employee {
         writeLog("Updated status for permission request: " + permissionRequestId);
     }
 
-    private static void writeLog(String message) {
-        System.out.println("Log: " + message);
-    }
 }

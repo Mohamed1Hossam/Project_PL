@@ -192,7 +192,4 @@ public class ProjectManagement extends Employee {
         return projectId + "," + clientName + "," + startDate.getTime() + "," + endDate.getTime();
     }
 
-    private static void writeLog(String log) {
-        System.out.println("LOG: " + log);
-    }
 }
