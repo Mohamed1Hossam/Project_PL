@@ -1,6 +1,7 @@
-
 import java.io.*;
 import java.util.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class ProjectManagement extends Employee {
 
@@ -17,46 +18,47 @@ public class ProjectManagement extends Employee {
         this.clientName = clientName;
         this.startDate = startDate;
         this.endDate = endDate;
+        writeLog("Created new project: " + projectId);
     }
 
     public String getProjectId() {
-
+        writeLog("Accessed projectId: " + projectId);
         return projectId;
     }
 
     public void setProjectId(String projectId) {
         this.projectId = projectId;
-
+        writeLog("Set projectId: " + projectId);
     }
 
     public String getClientName() {
-
+        writeLog("Accessed clientName: " + clientName);
         return clientName;
     }
 
     public void setClientName(String clientName) {
         this.clientName = clientName;
-
+        writeLog("Set clientName: " + clientName);
     }
 
     public Date getStartDate() {
-
+        writeLog("Accessed startDate: " + startDate);
         return startDate;
     }
 
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
-
+        writeLog("Set startDate: " + startDate);
     }
 
     public Date getEndDate() {
-
+        writeLog("Accessed endDate: " + endDate);
         return endDate;
     }
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
-
+        writeLog("Set endDate: " + endDate);
     }
 
     public void addProject() {
@@ -64,8 +66,10 @@ public class ProjectManagement extends Employee {
             writer.write(toDataString());
             writer.newLine();
             System.out.println("Project added successfully.");
+            writeLog("Added project: " + projectId);
         } catch (IOException e) {
             System.out.println("Error adding project: " + e.getMessage());
+            writeLog("Error adding project: " + projectId + " - " + e.getMessage());
         }
     }
 
@@ -92,15 +96,17 @@ public class ProjectManagement extends Employee {
 
             if (updated) {
                 System.out.println("Project updated successfully.");
+                writeLog("Updated project: " + projectId);
             } else {
                 System.out.println("Project ID not found for update.");
+                writeLog("Project ID not found for update: " + projectId);
             }
 
         } catch (IOException e) {
             System.out.println("Error while updating project: " + e.getMessage());
+            writeLog("Error updating project: " + projectId + " - " + e.getMessage());
         }
 
-        // Ensure file operations succeed
         if (inputFile.exists() && !inputFile.delete()) {
             System.out.println("Failed to delete original file. Check file permissions.");
         }
@@ -131,15 +137,17 @@ public class ProjectManagement extends Employee {
 
             if (deleted) {
                 System.out.println("Project deleted successfully.");
+                writeLog("Deleted project: " + projectId);
             } else {
                 System.out.println("Project ID not found for deletion.");
+                writeLog("Project ID not found for deletion: " + projectId);
             }
 
         } catch (IOException e) {
             System.out.println("Error while deleting project: " + e.getMessage());
+            writeLog("Error deleting project: " + projectId + " - " + e.getMessage());
         }
 
-        // Ensure file operations succeed
         if (inputFile.exists() && !inputFile.delete()) {
             System.out.println("Failed to delete original file. Check file permissions.");
         }
@@ -159,14 +167,17 @@ public class ProjectManagement extends Employee {
                     System.out.println("Client Name: " + data[1]);
                     System.out.println("Start Date: " + new Date(Long.parseLong(data[2])));
                     System.out.println("End Date: " + new Date(Long.parseLong(data[3])));
+                    writeLog("Viewed details for project: " + projectId);
                     return;
                 }
             }
 
             System.out.println("Project ID not found.");
+            writeLog("Project ID not found for view: " + projectId);
 
         } catch (IOException e) {
             System.out.println("Error while reading project: " + e.getMessage());
+            writeLog("Error reading project: " + projectId + " - " + e.getMessage());
         }
     }
 
@@ -180,7 +191,9 @@ public class ProjectManagement extends Employee {
 
         } catch (IOException e) {
             System.out.println("Error reading all projects: " + e.getMessage());
+            writeLog("Error reading all projects: " + e.getMessage());
         }
+        writeLog("Retrieved all projects.");
         return projects;
     }
 
@@ -188,4 +201,15 @@ public class ProjectManagement extends Employee {
         return projectId + "," + clientName + "," + startDate.getTime() + "," + endDate.getTime();
     }
 
+    private static void writeLog(String message) {
+        try (BufferedWriter logWriter = new BufferedWriter(new FileWriter(LOG_FILE_NAME, true))) {
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String timestamp = now.format(formatter);
+            logWriter.write(timestamp + " - " + message);
+            logWriter.newLine();
+        } catch (IOException e) {
+            System.err.println("Error writing to log file: " + e.getMessage());
+        }
+    }
 }
