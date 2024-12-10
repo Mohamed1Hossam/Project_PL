@@ -9,6 +9,7 @@ public class ProjectManagement extends Employee {
     private Date startDate;
     private Date endDate;
 
+    private static final String LOG_FILE_NAME = "../files/log.txt";
     private static final String FILE_NAME = "../files/projects.txt";
 
     public ProjectManagement(String projectId, String clientName, Date startDate, Date endDate) {

@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class PermissionRequest extends Employee {
 
@@ -8,9 +10,10 @@ public class PermissionRequest extends Employee {
     private String requestType;
     private String date;
     private String status;
-
+    
+    private static final String LOG_FILE_NAME = "../files/log.txt";
     private static final String FILE_NAME = "../files/PermissionRequest.txt";
-
+    
     public PermissionRequest(String permissionRequestId, String employeeId, String requestType, String date, String status) {
         this.permissionRequestId = permissionRequestId;
         this.employeeId = employeeId;
@@ -19,7 +22,20 @@ public class PermissionRequest extends Employee {
         this.status = status;
         writeLog("Created permission request object: " + permissionRequestId);
     }
-
+    
+        // Static method to write log messages
+    private static void writeLog(String message) {
+        try (BufferedWriter logWriter = new BufferedWriter(new FileWriter(LOG_FILE_NAME, true))) {
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String timestamp = now.format(formatter);
+            logWriter.write(timestamp + " - " + message);
+            logWriter.newLine();
+        } catch (IOException e) {
+            System.err.println("Error writing to log file: " + e.getMessage());
+        }
+    }
+    
     public String getPermissionRequestId() {
         String logMessage = "Accessed permissionRequestId: " + permissionRequestId;
         writeLog(logMessage);
