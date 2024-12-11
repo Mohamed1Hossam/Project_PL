@@ -1,108 +1,119 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package javaapplication8;
-
 
 import java.io.*;
 import java.util.*;
 
 public class Task extends TaskManagementSystem {
-    
-    private String taskId;
-    private String projectId;
-    private String assignedEmployeeId;
-    private String taskDescription;
-    private Date dueDate;
-    private String status;
+    private int taskId;
+    private String title;
+    private String description;
+    private String assignedEmployee;
+    private String phase;
+    private String project;
+    private String priority;
+    private Date startDate;
+    private Date endDate;
+    private int estimatedHours;
 
-    private static final String FILE_NAME = "../files/tasks.txt";
-    
-    public Task(int id, String userType, String taskId, String projectId, String assignedEmployeeId, String taskDescription, Date dueDate, String status) {
-        super(id, userType); // Calls the constructor of TaskManagementSystem
+    public Task(int id, String userType, int taskId, String title, String description) {
+        super(id, userType);
         this.taskId = taskId;
-        this.projectId = projectId;
-        this.assignedEmployeeId = assignedEmployeeId;
-        this.taskDescription = taskDescription;
-        this.dueDate = dueDate;
-        this.status = status;
-        writeLog("Created Task: " + taskId);
+        this.title = title;
+        this.description = description;
     }
 
-    public String getTaskId() {
-        writeLog("Accessed Task ID: " + taskId);
-        return taskId;
+    public void createTask() {
+        writeLog("Task created: " + taskId + ", Title: " + title);
+        saveToFile();
     }
 
-    public void setTaskId(String taskId) {
-        this.taskId = taskId;
-        writeLog("Updated Task ID to: " + taskId);
+    public void updateTask(String newTitle, String newDescription) {
+        this.title = newTitle;
+        this.description = newDescription;
+        writeLog("Task updated: " + taskId);
+        updateInFile();
     }
 
-    public String getProjectId() {
-        writeLog("Accessed Project ID for Task: " + taskId);
-        return projectId;
+    public void deleteTask() {
+        writeLog("Task deleted: " + taskId);
+        deleteFromFile();
     }
 
-    public void setProjectId(String projectId) {
-        this.projectId = projectId;
-        writeLog("Updated Project ID to: " + projectId);
+    public void reassignTask(String newEmployee) {
+        this.assignedEmployee = newEmployee;
+        writeLog("Task reassigned: " + taskId + " to Employee: " + newEmployee);
+        updateInFile();
     }
 
-    public String getAssignedEmployeeId() {
-        writeLog("Accessed Assigned Employee ID for Task: " + taskId);
-        return assignedEmployeeId;
+    public void changeTaskPhase(String newPhase) {
+        this.phase = newPhase;
+        writeLog("Task phase changed: " + taskId + " to Phase: " + newPhase);
+        updateInFile();
     }
 
-    public void setAssignedEmployeeId(String assignedEmployeeId) {
-        this.assignedEmployeeId = assignedEmployeeId;
-        writeLog("Updated Assigned Employee ID to: " + assignedEmployeeId);
+    private void saveToFile() {
+        try (PrintWriter writer = new PrintWriter(new FileOutputStream("../files/tasks.txt", true))) {
+            writer.println(this.toString());
+        } catch (IOException e) {
+            System.out.println("Error saving task: " + e.getMessage());
+            writeLog("Error saving task: " + e.getMessage());
+        }
     }
 
-    public String getTaskDescription() {
-        writeLog("Accessed Task Description for Task: " + taskId);
-        return taskDescription;
+    private void updateInFile() {
+        File inputFile = new File("../files/tasks.txt");
+        File tempFile = new File("../files/temp_tasks.txt");
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+             PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {
+
+            String currentLine;
+            while ((currentLine = reader.readLine()) != null) {
+                if (currentLine.startsWith("TaskID: " + taskId + ",")) {
+                    writer.println(this.toString());
+                } else {
+                    writer.println(currentLine);
+                }
+            }
+
+            if (!inputFile.delete() || !tempFile.renameTo(inputFile)) {
+                System.out.println("Error updating task file.");
+                writeLog("Error updating task file.");
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error updating task: " + e.getMessage());
+            writeLog("Error updating task: " + e.getMessage());
+        }
     }
 
-    public void setTaskDescription(String taskDescription) {
-        this.taskDescription = taskDescription;
-        writeLog("Updated Task Description for Task: " + taskId);
+    private void deleteFromFile() {
+        File inputFile = new File("../files/tasks.txt");
+        File tempFile = new File("../files/temp_tasks.txt");
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+             PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {
+
+            String currentLine;
+            while ((currentLine = reader.readLine()) != null) {
+                if (!currentLine.startsWith("TaskID: " + taskId + ",")) {
+                    writer.println(currentLine);
+                }
+            }
+
+            if (!inputFile.delete() || !tempFile.renameTo(inputFile)) {
+                System.out.println("Error deleting task file.");
+                writeLog("Error deleting task file.");
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error deleting task: " + e.getMessage());
+            writeLog("Error deleting task: " + e.getMessage());
+        }
     }
 
-    public Date getDueDate() {
-        writeLog("Accessed Due Date for Task: " + taskId);
-        return dueDate;
-    }
-
-    public void setDueDate(Date dueDate) {
-        this.dueDate = dueDate;
-        writeLog("Updated Due Date for Task: " + taskId);
-    }
-
-    public String getStatus() {
-        writeLog("Accessed Status for Task: " + taskId);
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-        writeLog("Updated Status for Task: " + taskId);
-    }
-
-    public void addTask() {
-        String taskData = toDataString();
-        writeToFile(FILE_NAME, taskData);
-        System.out.println("Task added successfully.");
-        writeLog("Added Task: " + taskId);
-    }
-
-    public static List<String> getAllTasks() {
-        return readFile(FILE_NAME);
-    }
-
-    private String toDataString() {
-        return taskId + "," + projectId + "," + assignedEmployeeId + "," + taskDescription + "," + dueDate.getTime() + "," + status;
+    @Override
+    public String toString() {
+        return "TaskID: " + taskId + ", Title: " + title + ", Description: " + description + ", AssignedEmployee: " + assignedEmployee + ", Phase: " + phase;
     }
 }
 
