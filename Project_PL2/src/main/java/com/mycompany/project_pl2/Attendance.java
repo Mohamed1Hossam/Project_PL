@@ -22,7 +22,7 @@ public class Attendance {
 
     // Save Attendance to file
     public void saveToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("attendance.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("files/attendance.txt", true))) {
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String dateStr = formatter.format(date);  // Format the date to string
             writer.write(attendanceId + "," + employeeId + "," + dateStr + "," + timeIn + "," + timeOut);
@@ -33,7 +33,7 @@ public class Attendance {
     }
     
     public void readFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("attendance.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("files/attendance.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);

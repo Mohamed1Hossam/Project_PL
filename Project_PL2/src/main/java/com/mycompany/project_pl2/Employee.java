@@ -43,7 +43,7 @@ public class Employee {
 
     // Save employee details to a file
     public void saveToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("employee.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("files/employee.txt", true))) {
             writer.write(employeeId + "," + name + "," + role);
             writer.newLine();
         } catch (IOException e) {
@@ -53,7 +53,7 @@ public class Employee {
 
     // Read employee details from a file
     public static void readFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("employee.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("files/employee.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);

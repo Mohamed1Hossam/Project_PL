@@ -14,8 +14,8 @@ public class PermissionRequest extends Employee {
     private String date;
     private String status;
     
-    private static final String LOG_FILE_NAME = "../files/log.txt";
-    private static final String FILE_NAME = "../files/PermissionRequest.txt";
+    private static final String LOG_FILE_NAME = "files/log.txt";
+    private static final String FILE_NAME = "files/PermissionRequest.txt";
     
     public PermissionRequest(String permissionRequestId, String employeeId, String requestType, String date, String status) {
         super(0, "Default Name", "Default Role"); // Provide appropriate values for Employee
