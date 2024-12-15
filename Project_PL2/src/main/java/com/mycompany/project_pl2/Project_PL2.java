@@ -6,9 +6,9 @@ import java.util.Date;
 public class Project_PL2 {
     public static void main(String[] args) {
         // FileManager instances with updated paths
-        FileManager employeeFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/employee.txt");
-        FileManager taskFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/tasks.txt");
-        FileManager userFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/users.txt");
+        // FileManager employeeFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/employee.txt");
+        // FileManager taskFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/tasks.txt");
+        // FileManager userFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/users.txt");
 
         // Admin instance
         Admin admin = new Admin(employeeFileManager, taskFileManager, userFileManager);

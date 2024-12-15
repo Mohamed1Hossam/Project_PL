@@ -13,7 +13,7 @@ public class PermissionRequest extends Employee {
     private String date;
     private String status;
     
-    private static final String FILE_NAME = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/filesPermissionRequest.txt";
+    private static final String FILE_NAME = "files/PermissionRequest.txt";
     
     public PermissionRequest(String permissionRequestId,String name, String role, int employeeId, String requestType, String date, String status) {
         super(employeeId, name, role);

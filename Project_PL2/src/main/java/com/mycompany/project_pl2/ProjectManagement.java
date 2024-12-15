@@ -13,8 +13,7 @@ public class ProjectManagement extends Employee {
     private Date startDate;
     private Date endDate;
 
-    private static final String LOG_FILE_NAME = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/log.txt";
-    private static final String FILE_NAME = "files/";
+    private static final String FILE_NAME = "files/projects.txt";
 
     public ProjectManagement(String projectId, String clientName, Date startDate, Date endDate) {
         this.projectId = projectId;
@@ -78,7 +77,7 @@ public class ProjectManagement extends Employee {
 
     public void updateProject(String projectId, ProjectManagement updatedProject) {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_projects.txt");
+        File tempFile = new File("files/temp_projects.txt");
         boolean updated = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -120,7 +119,7 @@ public class ProjectManagement extends Employee {
 
     public void deleteProject(String projectId) {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_projects.txt");
+        File tempFile = new File("files/temp_projects.txt");
         boolean deleted = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));

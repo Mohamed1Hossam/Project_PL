@@ -5,7 +5,7 @@ import java.io.*;
 public class LeaveRequest extends Employee {
     private int LRid;
     private String LRtype, LRstartDate, LRendDate, LRstatus;
-    private static final String LRfile = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/LR.txt"; // Configurable path
+    private static final String LRfile = "files/LR.txt"; // Configurable path
 
     public LeaveRequest() {
         super(0, "Default Name", "Default Role");
@@ -79,7 +79,7 @@ public class LeaveRequest extends Employee {
     // Update leave request
     public void updateLR(int LRid, String newStatus) {
         File inputFile = new File(LRfile);
-        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_LR.txt");
+        File tempFile = new File("files/temp_LR.txt");
 
         boolean updated = false;
 
@@ -116,7 +116,7 @@ public class LeaveRequest extends Employee {
     // Delete leave request
     public void deleteLR(int LRid) {
         File inputFile = new File(LRfile);
-        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_LR.txt");
+        File tempFile = new File("files/temp_LR.txt");
 
         boolean deleted = false;
 
