@@ -6,7 +6,8 @@
 package pkg11.pkg6;
 
 import javax.swing.JOptionPane;
-
+import tms.Admin;
+import tms.FileManager;
 /**
  *
  * @author hp
@@ -17,9 +18,14 @@ public class login extends javax.swing.JFrame {
      * Creates new form login
      */
     MyDate d;
+    Admin x;
+    FileManager employeeFileManager = new FileManager("employee.txt");
+        FileManager taskFileManager = new FileManager("tasks.txt");
+        FileManager userloginFileManager = new FileManager("userslogin.txt");
     public login() {
         initComponents();
         d=new MyDate();
+         x = new Admin(employeeFileManager, taskFileManager, userloginFileManager);
     }
 
     /**
@@ -68,13 +74,17 @@ public class login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String userName=user.getText();
         String password=pass.getText();
-        if(d.login(userName, password)){
+        if(x.loginUser(userName,password)){
             JOptionPane.showMessageDialog(null,"You are Successfully Logined","Successful Login",JOptionPane.INFORMATION_MESSAGE);
             Admin1 g= new Admin1();
             g.setLocation(400,200);
             g.setVisible(true);
             this.dispose();
         //new NewJFrame2().setVisible(true);
+        }
+        else{
+        JOptionPane.showMessageDialog(null,"Invalid username or password.","Unsuccessful Login",JOptionPane.INFORMATION_MESSAGE);
+ 
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
