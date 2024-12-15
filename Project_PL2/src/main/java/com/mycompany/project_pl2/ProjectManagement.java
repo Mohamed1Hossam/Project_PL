@@ -14,7 +14,7 @@ public class ProjectManagement extends Employee {
     private Date endDate;
 
     private static final String LOG_FILE_NAME = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/log.txt";
-    private static final String FILE_NAME = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/projects.txt";
+    private static final String FILE_NAME = "files/";
 
     public ProjectManagement(String projectId, String clientName, Date startDate, Date endDate) {
         this.projectId = projectId;
