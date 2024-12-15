@@ -53,7 +53,7 @@ public class Task extends TaskManagementSystem {
     }
 
     private void saveToFile() {
-        try (PrintWriter writer = new PrintWriter(new FileOutputStream("files/tasks.txt", true))) {
+        try (PrintWriter writer = new PrintWriter(new FileOutputStream("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/tasks.txt", true))) {
             writer.println(this.toString());
         } catch (IOException e) {
             System.out.println("Error saving task: " + e.getMessage());
@@ -62,8 +62,8 @@ public class Task extends TaskManagementSystem {
     }
 
     private void updateInFile() {
-        File inputFile = new File("files/tasks.txt");
-        File tempFile = new File("files/temp_tasks.txt");
+        File inputFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/tasks.txt");
+        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_tasks.txt");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {
@@ -89,8 +89,8 @@ public class Task extends TaskManagementSystem {
     }
 
     private void deleteFromFile() {
-        File inputFile = new File("files/tasks.txt");
-        File tempFile = new File("files/temp_tasks.txt");
+        File inputFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/tasks.txt");
+        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_tasks.txt");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {

@@ -3,7 +3,7 @@ package com.mycompany.project_pl2;
 
 import java.io.*;
 import java.util.*;
-class TaskLog extends TaskManagementSystem {
+public class TaskLog extends TaskManagementSystem {
     private int logId;
     private int taskId;
     private int employeeId;
@@ -32,7 +32,7 @@ class TaskLog extends TaskManagementSystem {
     }
 
     public void viewTaskLog() {
-        File inputFile = new File("files/tasklogs.txt");
+        File inputFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/tasklogs.txt");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
             String currentLine;
@@ -48,7 +48,7 @@ class TaskLog extends TaskManagementSystem {
     }
 
     private void saveToFile() {
-        try (PrintWriter writer = new PrintWriter(new FileOutputStream("files/tasklogs.txt", true))) {
+        try (PrintWriter writer = new PrintWriter(new FileOutputStream("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/tasklogs.txt", true))) {
             writer.println(this.toString());
         } catch (IOException e) {
             System.out.println("Error saving task log: " + e.getMessage());
@@ -57,8 +57,8 @@ class TaskLog extends TaskManagementSystem {
     }
 
     private void updateInFile() {
-        File inputFile = new File("files/tasklogs.txt");
-        File tempFile = new File("files/temp_tasklogs.txt");
+        File inputFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/tasklogs.txt");
+        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_tasklogs.txt");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {

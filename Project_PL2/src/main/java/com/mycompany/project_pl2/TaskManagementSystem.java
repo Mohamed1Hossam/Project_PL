@@ -8,8 +8,8 @@ public abstract class TaskManagementSystem {
 
     private int id; //idk if it should be string or int.. :b
     private String userType; //that's the user type-- is it admin, emploee or what
-    protected static final String logFile = "files/Log.txt"; //that's the path of the file where the log will be stored...probably
-    private static final String usersFile = "files/users.txt"; //same but for user..don't know if it's necceasry or not
+    protected static final String logFile = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/Log.txt"; //that's the path of the file where the log will be stored...probably
+    private static final String usersFile = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/users.txt"; //same but for user..don't know if it's necceasry or not
 
     //don't know if password is here or not
     public TaskManagementSystem() {

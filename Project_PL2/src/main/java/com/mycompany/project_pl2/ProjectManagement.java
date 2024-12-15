@@ -13,8 +13,8 @@ public class ProjectManagement extends Employee {
     private Date startDate;
     private Date endDate;
 
-    private static final String LOG_FILE_NAME = "files/log.txt";
-    private static final String FILE_NAME = "files/projects.txt";
+    private static final String LOG_FILE_NAME = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/log.txt";
+    private static final String FILE_NAME = "D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/projects.txt";
 
     public ProjectManagement(String projectId, String clientName, Date startDate, Date endDate) {
         this.projectId = projectId;
@@ -76,9 +76,9 @@ public class ProjectManagement extends Employee {
         }
     }
 
-    public static void updateProject(String projectId, ProjectManagement updatedProject) {
+    public void updateProject(String projectId, ProjectManagement updatedProject) {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("files/temp_projects.txt");
+        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_projects.txt");
         boolean updated = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -118,9 +118,9 @@ public class ProjectManagement extends Employee {
         }
     }
 
-    public static void deleteProject(String projectId) {
+    public void deleteProject(String projectId) {
         File inputFile = new File(FILE_NAME);
-        File tempFile = new File("files/temp_projects.txt");
+        File tempFile = new File("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/temp_projects.txt");
         boolean deleted = false;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -159,7 +159,7 @@ public class ProjectManagement extends Employee {
         }
     }
 
-    public static void viewProjectDetails(String projectId) {
+    public  void viewProjectDetails(String projectId) {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String currentLine;
 
@@ -184,7 +184,7 @@ public class ProjectManagement extends Employee {
         }
     }
 
-    public static List<String> getAllProjects() {
+    public List<String> getAllProjects() {
         List<String> projects = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String currentLine;
@@ -203,16 +203,5 @@ public class ProjectManagement extends Employee {
     private String toDataString() {
         return projectId + "," + clientName + "," + startDate.getTime() + "," + endDate.getTime();
     }
-
-    private static void writeLog(String message) {
-        try (BufferedWriter logWriter = new BufferedWriter(new FileWriter(LOG_FILE_NAME, true))) {
-            LocalDateTime now = LocalDateTime.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-            String timestamp = now.format(formatter);
-            logWriter.write(timestamp + " - " + message);
-            logWriter.newLine();
-        } catch (IOException e) {
-            System.err.println("Error writing to log file: " + e.getMessage());
-        }
-    }
+  
 }

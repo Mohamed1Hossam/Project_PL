@@ -4,7 +4,7 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Attendance {
+public class Attendance extends Employee {
     private int attendanceId;
     private int employeeId;
     private Date date;
@@ -22,7 +22,7 @@ public class Attendance {
 
     // Save Attendance to file
     public void saveToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("files/attendance.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/attendance.txt", true))) {
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String dateStr = formatter.format(date);  // Format the date to string
             writer.write(attendanceId + "," + employeeId + "," + dateStr + "," + timeIn + "," + timeOut);
@@ -31,9 +31,9 @@ public class Attendance {
             System.out.println("Error saving to attendance file: " + e.getMessage());
         }
     }
-    
+    @Override
     public void readFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("files/attendance.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/attendance.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);

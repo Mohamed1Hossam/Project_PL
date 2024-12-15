@@ -2,7 +2,7 @@ package com.mycompany.project_pl2;
 
 import java.util.List;
 
-public class Admin implements LoginManager{
+public class Admin extends TaskManagementSystem implements LoginManager  {
     private FileManager employeeFileManager;
     private FileManager taskFileManager;
     private FileManager userFileManager;

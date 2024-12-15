@@ -2,7 +2,7 @@ package com.mycompany.project_pl2;
 
 
 import java.util.*;
-class TaskCalendar extends TaskManagementSystem {
+public class TaskCalendar extends TaskManagementSystem {
     private int calendarId;
     private List<Task> taskList;
     private int employeeId;

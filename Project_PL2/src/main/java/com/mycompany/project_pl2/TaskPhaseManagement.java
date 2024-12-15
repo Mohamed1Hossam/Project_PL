@@ -1,6 +1,6 @@
 package com.mycompany.project_pl2;
 
-public class TaskPhaseManagement {
+public class TaskPhaseManagement extends TaskManagementSystem{
     private String taskId;
     private String taskName;
     private String phase;

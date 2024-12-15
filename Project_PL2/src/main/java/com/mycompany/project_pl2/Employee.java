@@ -3,7 +3,7 @@ package com.mycompany.project_pl2;
 import java.io.*;
 import java.util.*;
 
-public class Employee {
+public class Employee extends TaskManagementSystem {
     private int employeeId;
     private String name;
     private String role;
@@ -43,7 +43,7 @@ public class Employee {
 
     // Save employee details to a file
     public void saveToFile() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("files/employee.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/employee.txt", true))) {
             writer.write(employeeId + "," + name + "," + role);
             writer.newLine();
         } catch (IOException e) {
@@ -52,8 +52,8 @@ public class Employee {
     }
 
     // Read employee details from a file
-    public static void readFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("files/employee.txt"))) {
+    public void readFromFile() {
+        try (BufferedReader reader = new BufferedReader(new FileReader("D:/Work/Projects/Java/PL/Project_PL/Project_PL2/files/employee.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
