@@ -79,6 +79,7 @@ public class AdminAttendance extends javax.swing.JFrame {
 
         jLabel6.setText("Time Out :");
 
+        jTextPane1.setEditable(false);
         jScrollPane1.setViewportView(jTextPane1);
 
         jTextPane5.setEditable(false);
