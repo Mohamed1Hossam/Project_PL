@@ -1,21 +1,38 @@
 package com.mycompany.project_pl2;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class Project_PL2 {
     public static void main(String[] args) {
-        // FileManager instances with updated paths
-        // FileManager employeeFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/employee.txt");
-        // FileManager taskFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/tasks.txt");
-        // FileManager userFileManager = new FileManager("src/main/java/com/mycompany/project_pl2/files/users.txt");
+        // Dynamically resolve file paths relative to the project root
+        String basePath = new File("src/main/java/com/mycompany/project_pl2/files").getAbsolutePath();
+
+        // List of file names for different functionalities
+        List<String> fileNames = Arrays.asList("Log.txt", "employee.txt", "tasks.txt", "userslogin.txt", 
+                                               "users.txt", "attendance.txt", "LR.txt", 
+                                               "PermissionRequest.txt", "projects.txt");
+
+        // Create FileManager instances for each file
+        FileManager logFileManager = new FileManager(basePath + "/Log.txt");
+        FileManager employeeFileManager = new FileManager(basePath + "/employee.txt");
+        FileManager taskFileManager = new FileManager(basePath + "/tasks.txt");
+        FileManager userloginFileManager = new FileManager(basePath + "/userslogin.txt");
+        FileManager userFileManager = new FileManager(basePath + "/users.txt");
+        FileManager attendanceFileManager = new FileManager(basePath + "/attendance.txt");
+        FileManager LRFileManager = new FileManager(basePath + "/LR.txt");
+        FileManager permissionRequestFileManager = new FileManager(basePath + "/PermissionRequest.txt");
+        FileManager projectsFileManager = new FileManager(basePath + "/projects.txt");
 
         // Admin instance
-        Admin admin = new Admin(employeeFileManager, taskFileManager, userFileManager);
+        Admin admin = new Admin(employeeFileManager, taskFileManager, userloginFileManager);
 
         // Test login functionality
         System.out.println("Testing login functionality...");
-        boolean loginSuccess = admin.loginUser("testUser", "testPass");
+        boolean loginSuccess = admin.loginUser("mina", "mina123");
         if (!loginSuccess) {
             System.out.println("Login test failed. Ensure the 'users.txt' file contains the correct credentials.");
         }
