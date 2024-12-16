@@ -40,6 +40,8 @@ public class Admin1 extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg11/image/everest.png"))); // NOI18N
 
@@ -108,6 +110,17 @@ public class Admin1 extends javax.swing.JFrame {
         jLabel2.setText("Admin");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 110, -1));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setText("Search :");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 460, 80, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -166,6 +179,57 @@ public class Admin1 extends javax.swing.JFrame {
             this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        String searchText = jTextField1.getText().toLowerCase();
+
+        switch (searchText) {
+            case "users":
+            AdminUser attendancePage = new AdminUser();
+            attendancePage.setLocation(400, 200);
+            attendancePage.setVisible(true);
+            this.dispose();
+            break;
+
+            case "employee":
+            AdminEmployee taskPage = new AdminEmployee();
+            taskPage.setLocation(400, 200);
+            taskPage.setVisible(true);
+            this.dispose();
+            break;
+
+            case "task":
+            AdminTask taskLogPage = new AdminTask();
+            taskLogPage.setLocation(400, 200);
+            taskLogPage.setVisible(true);
+            this.dispose();
+            break;
+
+            case "projects":
+            AdminProject calendarPage = new AdminProject();
+            calendarPage.setLocation(400, 200);
+            calendarPage.setVisible(true);
+            this.dispose();
+            break;
+
+            case "requests":
+            AdminRequest requestsPage = new AdminRequest();
+            requestsPage.setLocation(400, 200);
+            requestsPage.setVisible(true);
+            this.dispose();
+            break;
+
+            case "view attendance":
+            AdminAttendance approvalPage = new AdminAttendance();
+            approvalPage.setLocation(400, 200);
+            approvalPage.setVisible(true);
+            this.dispose();
+            break;
+
+            default:
+            JOptionPane.showMessageDialog(this, "No match found for: " + searchText, "Search Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -212,5 +276,7 @@ public class Admin1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
