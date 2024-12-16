@@ -7,27 +7,31 @@ import java.time.format.DateTimeFormatter;
 
 public class ProjectManagement extends Employee {
 
-    private String projectId;
+    private int projectId;
     private String clientName;
-    private Date startDate;
-    private Date endDate;
+    private String startDate;
+    private String endDate;
 
     private static final String FILE_NAME = "projects.txt";
 
-    public ProjectManagement(String projectId, String clientName, Date startDate, Date endDate) {
+    public ProjectManagement(int projectId, String clientName, String startDate, String endDate) {
         this.projectId = projectId;
         this.clientName = clientName;
         this.startDate = startDate;
         this.endDate = endDate;
         writeLog("Created new project: " + projectId);
     }
+    
+    public ProjectManagement(){
+        
+    }
 
-    public String getProjectId() {
+    public int getProjectId() {
         writeLog("Accessed projectId: " + projectId);
         return projectId;
     }
 
-    public void setProjectId(String projectId) {
+    public void setProjectId(int projectId) {
         this.projectId = projectId;
         writeLog("Set projectId: " + projectId);
     }
@@ -42,22 +46,22 @@ public class ProjectManagement extends Employee {
         writeLog("Set clientName: " + clientName);
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         writeLog("Accessed startDate: " + startDate);
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
         writeLog("Set startDate: " + startDate);
     }
 
-    public Date getEndDate() {
+    public String getEndDate() {
         writeLog("Accessed endDate: " + endDate);
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
         writeLog("Set endDate: " + endDate);
     }
@@ -157,7 +161,7 @@ public class ProjectManagement extends Employee {
         }
     }
 
-    public  void viewProjectDetails(String projectId) {
+    public  String[] viewProjectDetails(String projectId) {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String currentLine;
 
@@ -166,10 +170,10 @@ public class ProjectManagement extends Employee {
                 if (data[0].equals(projectId)) {
                     System.out.println("Project ID: " + data[0]);
                     System.out.println("Client Name: " + data[1]);
-                    System.out.println("Start Date: " + new Date(Long.parseLong(data[2])));
-                    System.out.println("End Date: " + new Date(Long.parseLong(data[3])));
+                    System.out.println("Start Date: " + data[2]);
+                    System.out.println("End Date: " + data[3]);
                     writeLog("Viewed details for project: " + projectId);
-                    return;
+                    return data;
                 }
             }
 
@@ -180,6 +184,9 @@ public class ProjectManagement extends Employee {
             System.out.println("Error while reading project: " + e.getMessage());
             writeLog("Error reading project: " + projectId + " - " + e.getMessage());
         }
+        String [] x="This Project Doesn't Exist".split(" ");
+                            return x;
+
     }
 
     public  List<String> getAllProjects() {
@@ -199,7 +206,7 @@ public class ProjectManagement extends Employee {
     }
 
     private String toDataString() {
-        return projectId + "," + clientName + "," + startDate.getTime() + "," + endDate.getTime();
+        return projectId + "," + clientName + "," + startDate + "," + endDate;
     }
 
    

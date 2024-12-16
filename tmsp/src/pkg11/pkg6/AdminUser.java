@@ -6,6 +6,7 @@
 package pkg11.pkg6;
 
 import javax.swing.JOptionPane;
+import tms.Employee;
 
 /**
  *
@@ -56,13 +57,28 @@ public class AdminUser extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
-        jButton1.setText("Delete");
+        jButton1.setText("Update");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 120, 40));
 
         jButton3.setText("Add");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, 120, 40));
 
-        jButton5.setText("update");
+        jButton5.setText("Delete");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 120, 40));
 
         jTextField1.setMinimumSize(new java.awt.Dimension(64, 60));
@@ -123,6 +139,63 @@ public class AdminUser extends javax.swing.JFrame {
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        String id= jTextField3.getText();
+        String type= jTextField1.getText();
+        
+       if((id.isEmpty()||type.isEmpty())){
+                                                    JOptionPane.showMessageDialog(null,"Enter info Correctly","Wrong",JOptionPane.INFORMATION_MESSAGE);
+
+}
+            else{
+           int idd=Integer.parseInt(id);
+        Employee x= new Employee(idd,type);
+        x.saveUser();
+        
+        }
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        
+        String id= jTextField3.getText();
+        String type= jTextField1.getText();
+        
+       if((id.isEmpty())){
+                                                    JOptionPane.showMessageDialog(null,"Enter info Correctly","Wrong",JOptionPane.INFORMATION_MESSAGE);
+
+}
+            else{
+           int idd=Integer.parseInt(id);
+        Employee x= new Employee(idd,type);
+        x.delete(idd);
+        }
+        
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        String id= jTextField3.getText();
+        String type= jTextField1.getText();
+        
+       if((id.isEmpty())){
+                                                    JOptionPane.showMessageDialog(null,"Enter info Correctly","Wrong",JOptionPane.INFORMATION_MESSAGE);
+
+}
+            else{
+           int idd=Integer.parseInt(id);
+        Employee x= new Employee(idd,type);
+        x.update(idd,type);
+        }
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

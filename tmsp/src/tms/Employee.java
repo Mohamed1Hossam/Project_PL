@@ -15,6 +15,20 @@ public class Employee extends TaskManagementSystem {
     public Employee(){
         
     }
+    public Employee(int id,String type,int employeeId, String name, String role) {
+        super.setId(id);
+        super.setType(type);
+        this.employeeId = employeeId;
+        this.name = name;
+        this.role = role;
+        this.attendanceRecord = new ArrayList<>();
+        this.taskList = new ArrayList<>();
+        saveToFile();
+    }
+    public Employee(int id,String type) {
+        super.setId(id);
+        super.setType(type);
+    }
     
     public Employee(int employeeId, String name, String role) {
         this.employeeId = employeeId;
