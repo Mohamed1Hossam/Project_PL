@@ -36,7 +36,6 @@ public class EmployeeRequests extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextPane1.setEditable(false);
         jScrollPane1.setViewportView(jTextPane1);
 
         jButton4.setText("Logout");
