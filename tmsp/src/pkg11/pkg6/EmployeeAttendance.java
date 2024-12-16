@@ -164,7 +164,7 @@ public class EmployeeAttendance extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Admin1 g= new Admin1();
+        Employee1 g= new Employee1();
         g.setLocation(400,200);
         g.setVisible(true);
         this.dispose();
