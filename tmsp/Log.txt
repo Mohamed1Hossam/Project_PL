@@ -772,3 +772,84 @@ User updated successfully.
 User updated successfully.
 User updated successfully.
 User updated successfully.
+Created new project: 2
+Added project: 2
+Created new project: 2
+Updated project: 2
+Deleted project: 2
+Project ID not found for view: 2
+Created new project: 2
+Added project: 2
+Viewed details for project: 2
+Deleted project: 2
+Task created: 3, Title: sjs
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Task deleted: 3
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task created: 3, Title: hgv
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting original file.
+Task deleted: 3
+Error deleting original file.
+Task deleted: 3
+Error deleting original file.
+Task deleted: 3
+Error deleting original file.
+Task created: 3, Title: mmo
+Task reassigned: 3 to Employee: kjnacsk
+Error updating task file.
+Task created: 1, Title: mo
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+ID: 1 was set
+Type for ID: 1 was set
+ID: 1 with Type: Admin was saved to users.txt
+Error in the saveUser function: users.txt (The system cannot find the file specified)
+ID: 1 was set
+Type for ID: 1 was set
+ID: 1 with Type: Admin was saved to users.txt
+User saved successfully.
+ID: 5 was set
+Type for ID: 5 was set
+ID: 5 with Type: Manager was saved to users.txt
+User saved successfully.
+ID: 5 was set
+Type for ID: 5 was set
+User deleted successfully.
+ID: 10 was set
+Type for ID: 10 was set
+ID: 10 with Type: m was saved to users.txt
+User saved successfully.
+ID: 10 was set
+Type for ID: 10 was set
+User updated successfully.
+ID: 10 was set
+Type for ID: 10 was set
+User deleted successfully.

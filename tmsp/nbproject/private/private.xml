@@ -3,12 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/Work/Projects/Java/PL/Project_PL/tmsp/src/pkg11/pkg6/EmployeeRequests.java</file>
             <file>file:/D:/Work/Projects/Java/PL/Project_PL/tmsp/src/pkg11/pkg6/EmployeeTaskLog.java</file>
             <file>file:/D:/Work/Projects/Java/PL/Project_PL/tmsp/src/pkg11/pkg6/EmployeeApprovalStatus.java</file>
             <file>file:/D:/Work/Projects/Java/PL/Project_PL/tmsp/src/pkg11/pkg6/EmployeeTaskPage.java</file>
             <file>file:/D:/Work/Projects/Java/PL/Project_PL/tmsp/src/pkg11/pkg6/Employee1.java</file>
             <file>file:/D:/Work/Projects/Java/PL/Project_PL/tmsp/src/pkg11/pkg6/EmployeeCalender.java</file>
+=======
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/tms/PermissionRequest.java</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/pkg11/pkg6/login.java</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/pkg11/pkg6/Employee1.java</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/tms/Attendance.java</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/tms/LeaveRequest.java</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/tms/Tms.java</file>
+            <file>file:/C:/Users/DELL/Documents/GitHub/Project_PL/tmsp/src/pkg11/pkg6/AdminRequest.java</file>
+>>>>>>> 3602e90660d114876df4a51bd3125685a3b280ee
         </group>
     </open-files>
 </project-private>
