@@ -4,6 +4,8 @@
  */
 package pkg11.pkg6;
 
+import tms.Attendance;
+
 /**
  *
  * @author momo
@@ -13,8 +15,11 @@ public class AdminAttendance extends javax.swing.JFrame {
     /**
      * Creates new form AdminAttendance
      */
+    Attendance x;
     public AdminAttendance() {
         initComponents();
+        x=new Attendance();
+        jTextArea1.setText(x.readFromFileAttentance());
     }
 
     /**
@@ -64,7 +69,7 @@ public class AdminAttendance extends javax.swing.JFrame {
                             .addComponent(jButton4)
                             .addComponent(jButton2))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 670, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

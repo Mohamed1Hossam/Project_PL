@@ -2,7 +2,7 @@ package tms;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 
 public class Attendance extends Employee {
     private int attendanceId;
@@ -12,6 +12,10 @@ public class Attendance extends Employee {
     private String timeOut;
 
     // Constructor
+    public Attendance(){
+        
+    }
+        
     public Attendance(int attendanceId, int employeeId, Date date, String timeIn, String timeOut) {
         this.attendanceId = attendanceId;
         this.employeeId = employeeId;
@@ -26,23 +30,24 @@ public class Attendance extends Employee {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("attendance.txt", true))) {
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String dateStr = formatter.format(date);  // Format the date to string
-            writer.write(attendanceId + "," + employeeId + "," + dateStr + "," + timeIn + "," + timeOut);
+            writer.write("Attentance ID: "+attendanceId + ", Employee ID: " + employeeId + ", Start Date: " + dateStr + ", Time in: " + timeIn + ", Time out:" + timeOut);
             writer.newLine();
         } catch (IOException e) {
             System.out.println("Error saving to attendance file: " + e.getMessage());
         }
     }
 
-    @Override
-    public void readFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("files/attendance.txt"))) {
+    public String readFromFileAttentance() {
+         StringBuilder content = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader("attendance.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
+                content.append(line).append("\n"); // Append each line with a newline
             }
         } catch (IOException e) {
-            System.out.println("Error reading employee file: " + e.getMessage());
+            return "Error reading file: " + e.getMessage(); // Return the error message as the content
         }
+        return content.toString();
     }
     
     // Method to view attendance record

@@ -54,7 +54,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, -1));
 
         jButton1.setText("Projects");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
