@@ -44,6 +44,7 @@ public class login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(400, 200));
         setMinimumSize(new java.awt.Dimension(400, 360));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(user, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 130, 30));
@@ -58,7 +59,7 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
         getContentPane().add(pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 120, 30));
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 255));
+        jButton1.setBackground(new java.awt.Color(153, 153, 153));
         jButton1.setText("login");
         jButton1.setActionCommand("loginz");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -74,9 +75,17 @@ public class login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String userName=user.getText();
         String password=pass.getText();
-        if(x.loginUser(userName,password)){
-            JOptionPane.showMessageDialog(null,"You are Successfully Logined","Successful Login",JOptionPane.INFORMATION_MESSAGE);
+        if(x.loginUser(userName,password)==1){
+            JOptionPane.showMessageDialog(null,"You are Successfully Logined as Admin","Successful Login",JOptionPane.INFORMATION_MESSAGE);
             Admin1 g= new Admin1();
+            g.setLocation(400,200);
+            g.setVisible(true);
+            this.dispose();
+        //new NewJFrame2().setVisible(true);
+        }
+        else if(x.loginUser(userName,password)==2){
+            JOptionPane.showMessageDialog(null,"You are Successfully Logined as Employee","Successful Login",JOptionPane.INFORMATION_MESSAGE);
+            Employee1 g= new Employee1();
             g.setLocation(400,200);
             g.setVisible(true);
             this.dispose();

@@ -22,8 +22,8 @@ public class Tms {
 
         // Test login functionality
         System.out.println("Testing login functionality...");
-        boolean loginSuccess = admin.loginUser("mina", "mina123");
-        if (!loginSuccess) {
+        int loginSuccess = admin.loginUser("mina", "mina123");
+        if (loginSuccess==-1) {
             System.out.println("Login test failed. Ensure the 'userslogin.txt' file contains the correct credentials.");
         }
 

@@ -39,10 +39,12 @@ public class Admin1 extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg11/image/everest.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(400, 200));
         setMinimumSize(new java.awt.Dimension(400, 360));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -52,7 +54,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
 
         jButton1.setText("Projects");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +62,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 120, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 120, 40));
 
         jButton3.setText("Users");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +70,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 120, 40));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 120, 40));
 
         jButton4.setText("Employee");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +78,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 120, 40));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 120, 40));
 
         jButton5.setText("Task");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +86,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 120, 40));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 120, 40));
 
         jButton6.setText("View Attentance");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +94,7 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 120, 40));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 120, 40));
 
         jButton7.setText("Requests");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -100,7 +102,11 @@ public class Admin1 extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 120, 40));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 120, 40));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel2.setText("Admin");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -205,5 +211,6 @@ public class Admin1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

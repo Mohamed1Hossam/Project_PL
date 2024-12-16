@@ -9,7 +9,7 @@ package tms;
  * @author Mina ESSAM
  */
 public interface LoginManager {
-    boolean loginUser(String username, String password);
+    int loginUser(String username, String password);
     void logoutUser();
     boolean checkLogin();
 }

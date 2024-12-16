@@ -14,21 +14,26 @@ public class Admin extends TaskManagementSystem implements LoginManager{
         this.userFileManager = userFileManager;
     }
      @Override
-    public boolean loginUser(String username, String password) {
+    public int loginUser(String username, String password) {
         List<String> users = userFileManager.readFromFile(); // Read users from file
-        boolean loggedIn = false;
+        int loggedIn = -1;
 
         for (String user : users) {
             String[] credentials = user.split(",");
             if (credentials[0].equals(username) && credentials[1].equals(password)) {
-                loggedIn = true;
+                if (credentials.length == 3 && credentials[2].equals("Admin")) {
+                loggedIn = 1; // Correct username, password, and role "Admin"
+            } else {
+                loggedIn = 2; // Correct username and password but role is not "Admin"
+            }
                 loggedInUser = username; // Set logged-in user
                 System.out.println("Login successful for user: " + username);
                 break;
             }
+            
         }
 
-        if (!loggedIn) {
+        if (loggedIn==-1) {
             System.out.println("Invalid username or password.");
         }
 
