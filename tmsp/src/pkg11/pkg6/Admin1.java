@@ -165,7 +165,7 @@ public class Admin1 extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        AdminEmployee g= new AdminEmployee();
+        AdminEmployee1 g= new AdminEmployee1();
             g.setLocation(400,200);
             g.setVisible(true);
             this.dispose();
@@ -191,7 +191,7 @@ public class Admin1 extends javax.swing.JFrame {
             break;
 
             case "employee":
-            AdminEmployee taskPage = new AdminEmployee();
+            AdminEmployee1 taskPage = new AdminEmployee1();
             taskPage.setLocation(400, 200);
             taskPage.setVisible(true);
             this.dispose();

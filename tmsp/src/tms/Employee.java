@@ -120,4 +120,103 @@ public class Employee extends TaskManagementSystem {
     public void setTaskList(List<String> taskList) {
         this.taskList = taskList;
     }
+
+
+
+
+
+   public  void deleteProject(String projectId) {
+        File inputFile = new File("employee.txt");
+        File tempFile = new File("temp_projects.txt");
+        boolean deleted = false;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile))) {
+
+            String currentLine;
+
+            while ((currentLine = reader.readLine()) != null) {
+                String[] data = currentLine.split(",");
+                if (!data[0].trim().equals(projectId.trim())) {
+                    writer.write(currentLine);
+                    writer.newLine();
+                } else {
+                    deleted = true;
+                }
+            }
+
+            if (deleted) {
+                System.out.println("employee deleted successfully.");
+                writeLog("Deleted employee: " + projectId);
+            } else {
+                System.out.println("employee ID not found for deletion.");
+                writeLog("employee ID not found for deletion: " + projectId);
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error while deleting employee: " + e.getMessage());
+            writeLog("Error deleting employee: " + projectId + " - " + e.getMessage());
+        }
+
+        if (inputFile.exists() && !inputFile.delete()) {
+            System.out.println("Failed to delete original file. Check file permissions.");
+        }
+        if (!tempFile.renameTo(inputFile)) {
+            System.out.println("Failed to rename temp file. Check file permissions.");
+        }
+    }
+
+
+   
+    public void update(int employeeId, String name, String role) {
+        File inputFile = new File("employee.txt");
+        File tempFile = new File("temp_users.txt");
+
+        boolean updated = false;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile)); PrintWriter writer = new PrintWriter(new FileWriter(tempFile))) {
+
+            String currentLine;
+
+            while ((currentLine = reader.readLine()) != null) {
+                String[] data = currentLine.split(",");
+                if (currentLine.contains(""+employeeId)) {
+
+                    // Construct the new line with updated information
+                    writer.println(employeeId + "," + name + "," + role);
+                    updated = true;
+                } else {
+                    writer.write(currentLine);
+                    writer.println();
+
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error while updating user: " + e.getMessage());
+            writeLog("Error while updating user: " + e.getMessage());
+            return;
+        }
+
+        if (updated) {
+            if (inputFile.delete() && tempFile.renameTo(inputFile)) {
+                System.out.println("User updated successfully.");
+                writeLog("User updated successfully.");
+            } else {
+                System.out.println("Error updating user file.");
+                writeLog("Error updating user file.");
+            }
+        } else {
+            System.out.println("User ID not found.");
+            writeLog("User ID not found.");
+            tempFile.delete();
+        }
+    }
+   
+
+
+
+
 }
+
+
+
