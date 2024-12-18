@@ -51,12 +51,12 @@ public class login extends javax.swing.JFrame {
         getContentPane().add(user, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 130, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setText("userName ");
+        jLabel2.setText("UserName ");
         jLabel2.setToolTipText("");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel3.setText("password");
+        jLabel3.setText("Password");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
         getContentPane().add(pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 120, 30));
 
