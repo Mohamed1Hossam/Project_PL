@@ -4,6 +4,9 @@
  */
 package pkg11.pkg6;
 
+import javax.swing.JOptionPane;
+import tms.Attendance;
+
 /**
  *
  * @author moham
@@ -43,6 +46,7 @@ public class EmployeeAttendance extends javax.swing.JFrame {
         jTextPane1 = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
         jTextPane5 = new javax.swing.JTextPane();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,7 +54,6 @@ public class EmployeeAttendance extends javax.swing.JFrame {
 
         jLabel3.setText("Employee ID :");
 
-        jTextPane2.setEditable(false);
         jScrollPane2.setViewportView(jTextPane2);
 
         jButton4.setText("Logout");
@@ -71,26 +74,29 @@ public class EmployeeAttendance extends javax.swing.JFrame {
 
         jLabel4.setText("Date :");
 
-        jTextPane4.setEditable(false);
         jScrollPane4.setViewportView(jTextPane4);
 
-        jTextPane3.setEditable(false);
         jScrollPane3.setViewportView(jTextPane3);
 
         jLabel6.setText("Time Out :");
 
-        jTextPane1.setEditable(false);
         jScrollPane1.setViewportView(jTextPane1);
 
-        jTextPane5.setEditable(false);
         jScrollPane5.setViewportView(jTextPane5);
+
+        jButton1.setText("Sumbit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -118,7 +124,9 @@ public class EmployeeAttendance extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton4)
-                            .addComponent(jButton2))))
+                            .addComponent(jButton2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(111, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -145,9 +153,12 @@ public class EmployeeAttendance extends javax.swing.JFrame {
                     .addComponent(jScrollPane5)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton4))
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -169,6 +180,30 @@ public class EmployeeAttendance extends javax.swing.JFrame {
         g.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        String eid= jTextPane1.getText();
+        String aid= jTextPane2.getText();
+        String date= jTextPane3.getText();
+        String tin= jTextPane4.getText();
+        String tout= jTextPane5.getText();
+
+        if(eid.isEmpty()||aid.isEmpty()||date.isEmpty()||tin.isEmpty()||tout.isEmpty()){
+            JOptionPane.showMessageDialog(null,"Enter info Correctly","Wrong",JOptionPane.INFORMATION_MESSAGE);
+
+}else{
+    int eeid=Integer.parseInt(eid);
+    int aaid=Integer.parseInt(aid);
+Attendance x= new Attendance(aaid,eeid,date,tin,tout);
+x.saveToFile();
+        
+        }
+        
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -207,6 +242,7 @@ public class EmployeeAttendance extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel2;

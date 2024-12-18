@@ -4,6 +4,10 @@
  */
 package pkg11.pkg6;
 
+
+
+import tms.Task;
+
 /**
  *
  * @author moham
@@ -15,6 +19,8 @@ public class EmployeeTaskLog extends javax.swing.JFrame {
      */
     public EmployeeTaskLog() {
         initComponents();
+        Task x= new Task();
+        jTextArea1.setText(x.readFromFileG());
     }
 
     /**

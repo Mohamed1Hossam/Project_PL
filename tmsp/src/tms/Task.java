@@ -212,9 +212,56 @@ public class Task extends TaskManagementSystem {
     }
 }
 
+   
+   public String readFromFileG() {
+         StringBuilder content = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader("tasks.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n\n"); // Append each line with a newline
+            }
+        } catch (IOException e) {
+            return "Error reading file: " + e.getMessage(); // Return the error message as the content
+        }
+        return content.toString();
+    }
+   
+   
 
     @Override
     public String toString() {
         return "TaskID: " + taskId + ", Title: " + title + ", Description: " + description + ", AssignedEmployee: " + assignedEmployee + ", Phase: " + phase;
     }
+    
+    
+    
+    
+    public  String[] viewProjectDetails(String projectId) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("tasks.txt"))) {
+            String currentLine;
+
+            while ((currentLine = reader.readLine()) != null) {
+                String[] data = currentLine.split(",");
+                String x=data[0];
+                if (x.contains(projectId)) {
+                    
+                    writeLog("Viewed details for project: " + projectId);
+                    return data;
+                }
+            }
+
+            System.out.println("Task ID not found.");
+            writeLog("Task ID not found for view: " + projectId);
+
+        } catch (IOException e) {
+            System.out.println("Error while reading Task: " + e.getMessage());
+            writeLog("Error reading Task: " + projectId + " - " + e.getMessage());
+        }
+        String [] x="This Task Doesn't Exist".split(" ");
+                            return x;
+
+    }
+    
+    
+    
 }

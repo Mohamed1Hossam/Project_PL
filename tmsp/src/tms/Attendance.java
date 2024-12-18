@@ -7,7 +7,7 @@ import java.util.*;
 public class Attendance extends Employee {
     private int attendanceId;
     private int employeeId;
-    private Date date;
+    private String date;
     private String timeIn;
     private String timeOut;
 
@@ -16,7 +16,7 @@ public class Attendance extends Employee {
         
     }
         
-    public Attendance(int attendanceId, int employeeId, Date date, String timeIn, String timeOut) {
+    public Attendance(int attendanceId, int employeeId, String date, String timeIn, String timeOut) {
         this.attendanceId = attendanceId;
         this.employeeId = employeeId;
         this.date = date;
@@ -28,9 +28,7 @@ public class Attendance extends Employee {
     @Override
     public void saveToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("attendance.txt", true))) {
-            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            String dateStr = formatter.format(date);  // Format the date to string
-            writer.write("Attentance ID: "+attendanceId + ", Employee ID: " + employeeId + ", Start Date: " + dateStr + ", Time in: " + timeIn + ", Time out:" + timeOut);
+            writer.write("Attentance ID: "+attendanceId + ", Employee ID: " + employeeId + ", Start Date: " + date + ", Time in: " + timeIn + ", Time out:" + timeOut);
             writer.newLine();
         } catch (IOException e) {
             System.out.println("Error saving to attendance file: " + e.getMessage());
@@ -71,11 +69,11 @@ public class Attendance extends Employee {
     
 
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

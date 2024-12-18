@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 public class PermissionRequest extends Employee {
 
     private int permissionRequestId;
+    private int epid;
     private String requestType;
     private String date;
     private String status;
@@ -23,6 +24,17 @@ public class PermissionRequest extends Employee {
         this.status = status;
         writeLog("Created permission request object: " + permissionRequestId);
     }
+    public PermissionRequest(int permissionRequestId,int employeeId, String requestType) {
+        this.permissionRequestId = permissionRequestId;
+        this.requestType = requestType;
+        this.epid=employeeId;
+        LocalDateTime x= LocalDateTime.now();
+        this.date = x.toLocalDate().toString();
+        this.status = "Pending";
+        writeLog("Created permission request object: " + permissionRequestId);
+    }
+    
+    
     public PermissionRequest(){
         
     }
@@ -92,6 +104,21 @@ public class PermissionRequest extends Employee {
         }
     }
 
+    
+    public void submitPermissionRequestG() {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
+            writer.write(permissionRequestId + "," +epid + "," + requestType + "," + date + "," + status);
+            writer.newLine();
+            System.out.println("Permission request submitted successfully.");
+            writeLog("Submitted permission request: " + permissionRequestId);
+
+        } catch (IOException e) {
+            System.out.println("Error submitting permission request: " + e.getMessage());
+            writeLog("Error submitting permission request: " + e.getMessage());
+        }
+    }
+    
+    
     public  void approvePermissionRequest(int permissionRequestId) {
         updateStatus(permissionRequestId, "Approved");
         writeLog("Approved permission request: " + permissionRequestId);
@@ -149,6 +176,33 @@ public class PermissionRequest extends Employee {
             System.out.println("Error updating permission request: " + e.getMessage());
         }
         writeLog("Updated status for permission request: " + permissionRequestId);
+    }
+    
+    
+    
+     public  String viewProjectDetails(String projectId) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
+            String currentLine;
+
+            while ((currentLine = reader.readLine()) != null) {
+                String data = currentLine;
+                if (data.contains(projectId)) {
+                    
+                    writeLog("Viewed details for permission Request: " + projectId);
+                    return data;
+                }
+            }
+
+            System.out.println("permission Request ID not found.");
+            writeLog("permission Request ID not found for view: " + projectId);
+
+        } catch (IOException e) {
+            System.out.println("Error while reading permission Request: " + e.getMessage());
+            writeLog("Error reading Leave Request: " + projectId + " - " + e.getMessage());
+        }
+        String x="This Employee Doesn't Have permission Request";
+                            return x;
+
     }
     
     

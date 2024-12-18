@@ -1,11 +1,12 @@
 package tms;
 
 import java.io.*;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class LeaveRequest extends Employee {
-
-    private int LRid;
+    
+    private int LRid,employeeID;
     private String LRtype, LRstartDate, LRendDate, LRstatus;
     private static final String LRfile = "LR.txt"; //same as in super but for L requests..don't know if it's necceasry or not
 
@@ -24,6 +25,17 @@ public class LeaveRequest extends Employee {
         this.LRstatus = "Pending";
         ///remove if LR file not needed :b
         saveLR();
+    }
+    
+        public LeaveRequest(int employeeId, int LRid, String LRtype) {
+        this.LRid = LRid;
+        this.employeeID = employeeId;
+        this.LRtype = LRtype;
+        LocalDateTime x= LocalDateTime.now();
+        this.LRstartDate = x.toLocalDate().toString();
+        this.LRstatus = "Pending";
+        ///remove if LR file not needed :b
+        saveLRG();
     }
 
     public int getLRId() {
@@ -210,6 +222,44 @@ public class LeaveRequest extends Employee {
         }
 
     }
+    
+    
+    
+    public void saveLRG() {
+        String p = "Employee ID =" + employeeID + " --- LRid = " + LRid + " --- LRtype = " + LRtype + " --- LRstartDate = " + LRstartDate + " --- LRendDate = " + "Unknown" + " --- LRstatus = " + LRstatus;
+
+        writeLog(p + " was saved to " + LRfile);
+        try {
+            File file = new File(LRfile);
+            boolean userExists = false;
+
+            try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+                String currentLine;
+                while ((currentLine = reader.readLine()) != null) {
+                    if (currentLine.startsWith("Employee ID =" + employeeID+ " --- LRid = " + LRid)) {
+                        userExists = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!userExists) {
+                try (PrintWriter writer = new PrintWriter(new FileOutputStream(file, true))) {
+                    writer.println(p);
+                    System.out.println("User saved successfully.");
+                    writeLog("User saved successfully.");
+                }
+            } else {
+                System.out.println(p + " already exists.");
+                writeLog(p + " already exists.");
+            }
+        } catch (IOException ex) {
+            System.out.println(" wtf? Error in the saveUser function: " + ex.getMessage());
+            writeLog("Error in the saveUser function: " + ex.getMessage());
+        }
+
+    }
+    
 
     public void approveLR() {
 
@@ -217,6 +267,37 @@ public class LeaveRequest extends Employee {
         update(getEmployeeId(), getName(), getRole(), LRid);
 
     }
+    
+    
+    
+     public  String viewProjectDetails(String projectId) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(LRfile))) {
+            String currentLine;
+
+            while ((currentLine = reader.readLine()) != null) {
+                String data = currentLine;
+                if (data.contains("LRid = " + projectId)) {
+                    
+                    writeLog("Viewed details for Leave Request: " + projectId);
+                    return data;
+                }
+            }
+
+            System.out.println("Leave Request ID not found.");
+            writeLog("Leave Request ID not found for view: " + projectId);
+
+        } catch (IOException e) {
+            System.out.println("Error while reading Leave Request: " + e.getMessage());
+            writeLog("Error reading Leave Request: " + projectId + " - " + e.getMessage());
+        }
+        String x="This Employee Doesn't Have Leave Request";
+                            return x;
+
+    }
+    
+    
+    
+    
 
     public void rejectLR() {
         this.LRstatus = "Rejected";

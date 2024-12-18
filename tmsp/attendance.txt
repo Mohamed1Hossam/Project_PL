@@ -32,3 +32,4 @@ Attentance ID: 1, Employee ID: 2, Start Date: 2024-12-16 15:33:30, Time in: 09:0
 Attentance ID: 1, Employee ID: 2, Start Date: 2024-12-16 15:34:05, Time in: 09:00 AM, Time out:05:00 PM
 Attentance ID: 1, Employee ID: 2, Start Date: 2024-12-16 15:34:58, Time in: 09:00 AM, Time out:05:00 PM
 Attentance ID: 1, Employee ID: 2, Start Date: 2024-12-16 15:36:08, Time in: 09:00 AM, Time out:05:00 PM
+Attentance ID: 20, Employee ID: 50, Start Date: 3/4/2005, Time in: 4, Time out:6

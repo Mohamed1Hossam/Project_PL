@@ -853,3 +853,33 @@ User updated successfully.
 ID: 10 was set
 Type for ID: 10 was set
 User deleted successfully.
+Created permission request object: 15
+Submitted permission request: 15
+Employee ID =6 --- LRid = 5 --- LRtype = bored --- LRstartDate = 2024-12-18 --- LRendDate = Unknown --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Leave Request ID not found for view: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Leave Request ID not found for view: 6
+Viewed details for Leave Request: 6
+Viewed details for Leave Request: 6
+Viewed details for Leave Request: 5
+Leave Request ID not found for view: 6
+Leave Request ID not found for view: 15
+Viewed details for permission Request: 5
+Error reading Task: 3 - Task.txt (The system cannot find the file specified)
+Error reading Task: 3 - task.txt (The system cannot find the file specified)
+Viewed details for project: 3
+Viewed details for project: 3
+Viewed details for project: 1
+Viewed details for project: 1
+Viewed details for project: 1
+Viewed details for project: 3
+Viewed details for project: 3
