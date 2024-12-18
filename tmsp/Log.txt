@@ -1,0 +1,892 @@
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: PRM101
+Submitted permission request: PRM101
+Read all permission requests from file
+Updated status for permission request: PRM101
+Approved permission request: PRM101
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: PRM101
+Submitted permission request: PRM101
+Read all permission requests from file
+Updated status for permission request: PRM101
+Approved permission request: PRM101
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: PRM101
+Submitted permission request: PRM101
+Read all permission requests from file
+Updated status for permission request: PRM101
+Approved permission request: PRM101
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: PRM101
+Submitted permission request: PRM101
+Read all permission requests from file
+Updated status for permission request: PRM101
+Approved permission request: PRM101
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: PRM101
+Submitted permission request: PRM101
+Read all permission requests from file
+Updated status for permission request: PRM101
+Approved permission request: PRM101
+Created permission request object: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Submitted permission request: 12
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User saved successfully.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+User saved successfully.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+Employee ID =240 --- Name = Aliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+It exists already LR
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+User saved successfully.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+It exists already LR
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+User saved successfully.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+It exists already LR
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+It exists already LR
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists in lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists in lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists in lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists in lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists in lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists in lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists in lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists in lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists in lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists in lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists in lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists in lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+User record saved successfully to lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Submitted permission request: 12
+Employee ID = 240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Create ID: 1 with Type: Employee
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to lr.txt
+User record saved successfully to lr.txt
+Employee ID = 2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to lr.txt
+User record saved successfully to lr.txt
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Submitted permission request: 12
+Create ID: 1 with Type: Employee
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Submitted permission request: 12
+Create ID: 1 with Type: Employee
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+User deleted successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Approved already exists.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User ID not found.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User ID not found.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User ID not found.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User ID not found.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User ID not found.
+User ID not found.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Updated status for permission request: 101
+Approved permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Read all permission requests from file
+Error updating LR status.
+Error updating LR status.
+Error updating LR status.
+Error updating LR status.
+Error updating LR status.
+Error updating LR status.
+Error updating LR status.
+Error updating LR status.
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Created permission request object: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Submitted permission request: 12
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status: File operation failed.
+Create ID: 1 with Type: Employee
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending was saved to LR.txt
+Employee ID =2 --- Name = Jane Smith --- Role = Designer --- LRid = 101 --- LRtype = Sick Leave --- LRstartDate = 2024-12-20 --- LRendDate = 2024-12-22 --- LRstatus = Pending already exists.
+User updated successfully.
+Created new project: PRJ101
+Added project: PRJ101
+Created new project: PRJ101
+Updated project: PRJ101
+Deleted project: PRJ101
+Created permission request object: 101
+Submitted permission request: 101
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status: File operation failed.
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status: File operation failed.
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status: File operation failed.
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status: File operation failed.
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Error updating LR status: File operation failed.
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending was saved to LR.txt
+Employee ID =240 --- Name = Aaliceson John --- Role = Employee --- LRid = 21 --- LRtype = Vacation --- LRstartDate = 2024-12-1 --- LRendDate = 2124-12-1 --- LRstatus = Pending already exists.
+Leave record with ID 21 not found.
+Leave record with ID 21 not found.
+Leave record approved successfully.
+Error updating user file.
+Error updating user file.
+User updated successfully.
+User updated successfully.
+User updated successfully.
+User updated successfully.
+Created new project: 2
+Added project: 2
+Created new project: 2
+Updated project: 2
+Deleted project: 2
+Project ID not found for view: 2
+Created new project: 2
+Added project: 2
+Viewed details for project: 2
+Deleted project: 2
+Task created: 3, Title: sjs
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Task deleted: 3
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task created: 3, Title: hgv
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting task file.
+Task deleted: 3
+Error deleting original file.
+Task deleted: 3
+Error deleting original file.
+Task deleted: 3
+Error deleting original file.
+Task deleted: 3
+Error deleting original file.
+Task created: 3, Title: mmo
+Task reassigned: 3 to Employee: kjnacsk
+Error updating task file.
+Task created: 1, Title: mo
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+Task updated successfully.
+ID: 1 was set
+Type for ID: 1 was set
+ID: 1 with Type: Admin was saved to users.txt
+Error in the saveUser function: users.txt (The system cannot find the file specified)
+ID: 1 was set
+Type for ID: 1 was set
+ID: 1 with Type: Admin was saved to users.txt
+User saved successfully.
+ID: 5 was set
+Type for ID: 5 was set
+ID: 5 with Type: Manager was saved to users.txt
+User saved successfully.
+ID: 5 was set
+Type for ID: 5 was set
+User deleted successfully.
+ID: 10 was set
+Type for ID: 10 was set
+ID: 10 with Type: m was saved to users.txt
+User saved successfully.
+ID: 10 was set
+Type for ID: 10 was set
+User updated successfully.
+ID: 10 was set
+Type for ID: 10 was set
+User deleted successfully.
+Created permission request object: 15
+Submitted permission request: 15
+Employee ID =6 --- LRid = 5 --- LRtype = bored --- LRstartDate = 2024-12-18 --- LRendDate = Unknown --- LRstatus = Pending was saved to LR.txt
+User saved successfully.
+Leave Request ID not found for view: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Viewed details for Leave Request: 5
+Leave Request ID not found for view: 6
+Viewed details for Leave Request: 6
+Viewed details for Leave Request: 6
+Viewed details for Leave Request: 5
+Leave Request ID not found for view: 6
+Leave Request ID not found for view: 15
+Viewed details for permission Request: 5
+Error reading Task: 3 - Task.txt (The system cannot find the file specified)
+Error reading Task: 3 - task.txt (The system cannot find the file specified)
+Viewed details for project: 3
+Viewed details for project: 3
+Viewed details for project: 1
+Viewed details for project: 1
+Viewed details for project: 1
+Viewed details for project: 3
+Viewed details for project: 3
+Error deleting original file.
+Error deleting original file.
+Deleted employee: 240
+User updated successfully.
+Viewed details for task with employee: desc
+Viewed details for task with employee: desc
+Viewed details for task with employee: desc
